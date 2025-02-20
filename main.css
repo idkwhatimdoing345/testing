@@ -10,9 +10,11 @@ body{
 .app{
     width: 100px;
     height: 100px;
-    border-radius: 10;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px black;
     color: aliceblue;
+}
+#math{
     background-color: brown;
 }
 a{

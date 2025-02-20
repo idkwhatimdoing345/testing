@@ -8,6 +8,7 @@ body{
   border: 1px solid bisque;
   width:120px;
   height:40px;
+  color: azure;
 }
 #gamearea{
   background-color: gray;
@@ -20,4 +21,10 @@ body{
   border: 3px solid white;
   box-shadow: 2px 2px 2px black;
   width: 300px;
+}
+#clear{
+  width: 120px;
+  height: 30px;
+  background-color: red;
+  color: azure;
 }

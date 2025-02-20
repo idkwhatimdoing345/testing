@@ -1,26 +1,30 @@
+
 // 1. Create an audio context
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+let activate = document.getElementById("clicker");
 
-// 2. Create an oscillator node
-const oscillator = audioContext.createOscillator();
+function click() {
+    // 2. Create a new oscillator node each time the button is clicked
+    const oscillator = audioContext.createOscillator();
 
-// 3. Set the oscillator type ('sine', 'square', 'sawtooth', 'triangle')
-oscillator.type = 'sine'; 
+    // 3. Set the oscillator type ('sine', 'square', 'sawtooth', 'triangle')
+    oscillator.type = 'sine'; 
 
-// 4. Set frequency (in Hz)
-oscillator.frequency.setValueAtTime(440, audioContext.currentTime); // A4 note
+    // 4. Set frequency (in Hz)
+    oscillator.frequency.setValueAtTime(440, audioContext.currentTime); // A4 note
 
-// 5. Connect the oscillator to the speakers
-oscillator.connect(audioContext.destination);
-let acivate = document.getElementById("clicker")
+    // 5. Connect the oscillator to the speakers
+    oscillator.connect(audioContext.destination);
 
-
-function click(){
+    // 6. Start the oscillator
     oscillator.start();
 
-    // 7. Stop it after 2 seconds
+    // 7. Stop it after 0.5 seconds
     setTimeout(() => {
         oscillator.stop();
     }, 500);
 }
-acivate.addEventListener("click", click)
+
+// Attach the function to the button click event
+activate.addEventListener("click", click);
+

@@ -1,11 +1,14 @@
 body{
   font-family: Verdana;
-  background-color: blue;
+  background-color: white
 }
-.uselessinfo{
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid orange;
+#clicker{
+  background-color: green;
+  border-radius: 3px;
+  border: 1px solid bisque;
+}
+#gamearea{
+  background-color: gray;
+  border: 3px solid white;
+  box-shadow: 2px 2px 2px black;
 }

@@ -7,3 +7,11 @@ body{
     flex-direction: row;
     gap: 20px;
 }
+.app{
+    width: 100px;
+    height: 100px;
+    border-radius: 10;
+    box-shadow: 2px 2px 2px black;
+    color: aliceblue;
+    background-color: brown;
+}

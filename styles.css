@@ -6,6 +6,9 @@ body{
   background-color: green;
   border-radius: 3px;
   border: 1px solid bisque;
+  width:120px;
+  height:40px;
+  justify-self: center;
 }
 #gamearea{
   background-color: gray;

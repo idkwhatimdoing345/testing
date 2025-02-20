@@ -1,0 +1,9 @@
+body{
+    background-color: cadetblue;
+    font-family: Verdana;
+}
+#apps{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

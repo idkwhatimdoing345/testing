@@ -10,6 +10,6 @@ function update(){
 button.addEventListener("click", update)
 function clear(){
     score = 0
-    update
+    textdisplay.textContent = "points: " + score
 }
 clearb.addEventListener("click", clear)

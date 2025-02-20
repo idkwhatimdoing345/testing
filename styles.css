@@ -11,4 +11,6 @@ body{
   background-color: gray;
   border: 3px solid white;
   box-shadow: 2px 2px 2px black;
+  width: 300px;
+  justify-self: center;
 }

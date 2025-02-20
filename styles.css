@@ -5,7 +5,6 @@ body{
 .uselessinfo{
   background-color: white;
   border-radius: 10px;
-  position: relative;
-  justify-content: center;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
 }

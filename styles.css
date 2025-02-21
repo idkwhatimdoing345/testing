@@ -2,3 +2,7 @@ body{
   font-family: Verdana;
   background-color: rgb(245, 212, 255);
 }
+#modes{
+  background-color: bisque;
+  border-radius: 10px;
+}

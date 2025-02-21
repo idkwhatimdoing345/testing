@@ -1,30 +1,4 @@
 body{
   font-family: Verdana;
-  background-color: rgb(142, 85, 160);
-}
-#clicker{
-  background-color: green;
-  border-radius: 3px;
-  border: 1px solid bisque;
-  width:120px;
-  height:40px;
-  color: azure;
-}
-#gamearea{
-  background-color: gray;
-  border: 3px solid white;
-  box-shadow: 2px 2px 2px black;
-  width: 300px;
-}
-#settings{
-  background-color: gray;
-  border: 3px solid white;
-  box-shadow: 2px 2px 2px black;
-  width: 300px;
-}
-#clear{
-  width: 120px;
-  height: 30px;
-  background-color: red;
-  color: azure;
+  background-color: rgb(245, 212, 255);
 }

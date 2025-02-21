@@ -1,15 +1,1 @@
-let button = document.getElementById("clicker")
-let score = 0
-let textdisplay = document.getElementById("TDS")
-let skval = document.getElementById("skipcount")
-let clearb = document.getElementById("clear")
-function update(){
-    score += parseInt(skval.value)
-    textdisplay.textContent = "points: " + score
-}
-button.addEventListener("click", update)
-function clear(){
-    score = 0
-    textdisplay.textContent = "points: " + score
-}
-clearb.addEventListener("click", clear)
+alert("update in progress, if you are viewing this page, its in the middle of being rewritten")

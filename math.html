@@ -6,12 +6,18 @@
   <body>
     <h1>clicker game for learning numbers</h1>
     <div id="modes">
-      <button>add</button>
-      <button>subtract</button>
+      <button id="addb">add</button>
+      <button id="subb">subtract</button>
     </div>
-    <div id="add">
+    <h1 id="res"></h1>
+    <button id="val">increment</button>
+    <div id="add" class="modemenu" hidden="true">
       <label for="adding">add value: </label>
-      <input type="number" id="adding">
+      <input type="number" id="adding" class="aui">
+    </div>
+    <div id="sub" class="modemenu" hidden="true">
+      <label for="subt">subtract value: </label>
+      <input type="number" id="subt" class="aui">
     </div>
     <p>release 1.3</p>
     <script src="mathhandler.js"></script>

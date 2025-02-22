@@ -1,8 +1,73 @@
-body{
-  font-family: Verdana;
-  background-color: rgb(245, 212, 255);
+/* General Styles */
+body {
+  background-color: palegreen;
+  font-family: Verdana, sans-serif;
+  text-align: center; /* Center align content */
+  margin: 0;
+  padding: 20px;
 }
-#modes{
-  background-color: bisque;
+
+/* Mode Buttons Container */
+#modes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Add and Subtract Sections */
+#add, #subt {
+  background: white;
+  padding: 20px;
+  margin: 10px auto;
+  width: 300px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide the sections by default (if JS toggles with .hidden) */
+.hidden {
+  display: none;
+}
+
+/* Input Fields */
+input[type="number"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Increment Button */
+#val {
+  background-color: #007BFF; /* Blue */
+}
+
+#val:hover {
+  background-color: #0056b3;
+}
+
+/* Result Display */
+#res {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
 }

@@ -2,3 +2,16 @@ body{
     background-color: palegreen;
     font-family: Verdana;
 }
+.app{
+    width: 100px;
+    height: 100px;
+    animation: forwards start ;
+}
+#math{
+    background-color: burlywood;
+}
+
+@keyframes start{
+    0% {width: 0px}
+    100% {width: 100px}
+}

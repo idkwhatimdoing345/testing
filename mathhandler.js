@@ -30,14 +30,18 @@ button2.addEventListener("click", function () {
   menuopt1.hidden = true; // Hide add menu
 });
 
-// Increment the value based on input
+// Increment the value based on input, but only use the active mode
 inc.addEventListener("click", function () {
-  let addNum = parseFloat(addvalue.value) || 0; // Get the add input value
-  let subNum = parseFloat(subvalue.value) || 0; // Get the subtract input value
-
-  finval += addNum; // Add the input value
-  finval -= subNum; // Subtract the input value
-
+  if (!menuopt1.hidden) {
+    // If the add menu is visible, only add the input value
+    let addNum = parseFloat(addvalue.value) || 0;
+    finval += addNum;
+  } else if (!menuopt2.hidden) {
+    // If the subtract menu is visible, only subtract the input value
+    let subNum = parseFloat(subvalue.value) || 0;
+    finval -= subNum;
+  }
+  
   updateResult(); // Update the result display
 });
 

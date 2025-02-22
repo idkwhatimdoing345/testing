@@ -1,4 +1,4 @@
-alert("Update in progress, if you are viewing this page, it's in the middle of being rewritten");
+
 
 // Getting elements
 let menuopt1 = document.getElementById("add"); // Add div
